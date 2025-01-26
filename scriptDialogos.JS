@@ -233,7 +233,7 @@ function obtenerUnDialogoAleatorio() {
     "El armario de mi casa huele a que alguien escondio un muerto ahi dame algo para el olor, algo como una",
     "Una de estas al dia aleja a los medicos brujos y chamanes, de que hablo? de una",
   ];
-  return phrases[pickRandom(phrases.length)];
+  return phrases[pickRandom(phrases.length)] + " ";
 }
 function obtenerUnaBurbuja() {
   const burbujas = [
@@ -272,6 +272,33 @@ function obtenerUnaPalabra() {
     "Burbuja",
     "Detergente",
     "Caldero",
+    "Espuma",
+    "Fragancia",
+    "Hidratacion",
+    "Suavidad",
+    "Relajacion",
+    "Colorido",
+    "Transparencia",
+    "Artesanal",
+    "Esencia", //Cuantas palabras?
+    "Acondicionador",
+    "Purificacion",
+    "Exfoliacion",
+    "Aroma",
+    "Glicerina",
+    "Espiral",
+    "Arcilla",
+    "Petalo",
   ];
   return palabras[pickRandom(palabras.length)];
+}
+
+function obtenerUnaFraseDeAgradecimiento() {
+  const dialogos = [
+    "Gracias!",
+    "Gracias por la Burbuja!",
+    "Es exactamente lo que queria!",
+    "Hasta la proxima!",
+  ];
+  return dialogos[pickRandom(dialogos.length)];
 }
